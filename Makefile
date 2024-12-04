@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/04 15:48:17 by ohaker            #+#    #+#              #
-#    Updated: 2024/12/04 16:27:28 by ohaker           ###   ########.fr        #
+#    Updated: 2024/12/04 21:16:04 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,9 +39,9 @@ franci:
 
 mygit:
 	@bash -c ' \
-	cd ../../GitHub && \
 	cp -ru ~/Projects/get_next_line ~/GitHub && \
-	git add get_next_line && \
+	cd ../../GitHub/get_next_line && \
+	git add . && \
 	git status && \
 	read -p "Commitment message: " input; \
 	git commit -m "$$input" && \
