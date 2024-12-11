@@ -6,29 +6,9 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/04 15:48:17 by ohaker            #+#    #+#              #
-#    Updated: 2024/12/04 21:16:04 by ohaker           ###   ########.fr        #
+#    Updated: 2024/12/11 20:10:42 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-NAME = libget_next_line.a
-CFLAGS = -Wall -Wextra -Werror
-SRC = \	
-
-OBJ = $(SRC:.c=.o)
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	cc $(CFLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
-
-clean:
-	rm -f $(OBJ)
-
-fclean:
-	rm -f $(NAME)
-
-re: fclean all
 
 franci:
 	clear
@@ -48,5 +28,3 @@ mygit:
 	git push origin main'
 # Command to copy all changed files into another directory
 # so it can be pushed into my GitHub.
-
-.PHONY: all clean fclean re
